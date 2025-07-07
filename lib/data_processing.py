@@ -19,3 +19,10 @@ def display_students(student_list):
     """
     for student in student_list:
         print(format_student_data(student))
+
+
+def student_generator(student_list, major):
+    """
+    Generate student records lazily for a given major. Should be more memory efficient
+    """
+    return (student for student in student_list if student[2].lower() == major.lower())
