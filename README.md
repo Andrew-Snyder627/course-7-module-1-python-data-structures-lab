@@ -34,11 +34,13 @@ This lab will help you apply Python **data structures** to solve real-world prob
 ### Install Dependencies
 
 Ensure **Python** is installed:
+
 ```sh
 python --version
 ```
 
 Run the following command to install dependencies:
+
 ```sh
 pipenv install
 ```
@@ -68,6 +70,7 @@ The **Student Data Management System** will be built using structured data handl
 - **Sets**: Track unique student data attributes such as completed courses and enrolled majors.
 
 #### Design Breakdown:
+
 - **Student list storage** using **tuples** and **lists**.
 - **Filtering capabilities** using **list comprehensions**.
 - **Memory-efficient data handling** with **generator expressions**.
@@ -107,7 +110,7 @@ display_students(students)
 def filter_students_by_major(student_list, major):
     """Filter students by major using a list comprehension"""
     filtered = [student for student in student_list if student[2] == major]
-    
+
     if filtered:
         print(f"\nStudents majoring in {major}:")
         display_students(filtered)
@@ -187,3 +190,30 @@ By mastering **Sequences, List Comprehensions, Generator Expressions, Dictionari
 - Improve **scalability using structured data management techniques**.
 
 This lab ensures real-world applicability of Python **data structures** in managing dynamic, scalable, and efficient datasets.
+
+## Student Data Management System
+
+This project is a Python-based Student Data Management System designed to efficiently store, filter, and process student records. It demonstrates the use of Python data structures including lists, tuples, dictionaries, sets, list comprehensions, and generator expressions.
+
+---
+
+## 📂 Features
+
+- Store student records using lists and tuples
+- Filter students by major using list comprehensions
+- Retrieve student records lazily using generator expressions
+- Manage student details using dictionaries
+- Track unique majors using set comprehensions
+- Unit tested with `pytest`
+
+---
+
+## 🧠 Concepts Used
+
+- **Lists & Tuples**: Used to store individual student records
+- **List Comprehensions**: Used to filter students by major
+- **Generator Expressions**: Used for memory-efficient filtering
+- **Dictionaries**: Used for fast lookups and storing student attributes
+- **Sets**: Used to track unique majors and courses
+
+---
